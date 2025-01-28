@@ -1,4 +1,3 @@
-sudo -i
 
 dnf -y install https://dev.mysql.com/get/mysql84-community-release-el9-1.noarch.rpm
 dnf -y install mysql mysql-community-client
@@ -66,4 +65,11 @@ catch (Exception $e)
 }
 ?>
 EOF
+
+wget https://bootstrap.pypa.io/get-pip.py
+python3 ./get-pip.py
+
+pip install jupyter --ignore-installed
+# jupyter-lab --ip='0.0.0.0' --allow-root
+
 
