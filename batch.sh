@@ -70,6 +70,6 @@ wget https://bootstrap.pypa.io/get-pip.py
 python3 ./get-pip.py
 
 pip install jupyter --ignore-installed
-# jupyter-lab --ip='0.0.0.0' --allow-root
+# nohup jupyter-lab --ip='0.0.0.0' --allow-root &
 
 
