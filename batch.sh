@@ -73,3 +73,13 @@ pip install jupyter --ignore-installed
 # nohup jupyter-lab --ip='0.0.0.0' --allow-root &
 
 
+wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+sh Anaconda3-2024.10-1-Linux-x86_64.sh -b
+export PATH=/root/anaconda3/bin:$PATH
+
+rm -rf Anaconda3-2024.10-1-Linux-x86_64.sh
+
+conda install -c r r-irkernel
+
+
+
