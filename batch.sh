@@ -79,7 +79,7 @@ export PATH=/root/anaconda3/bin:$PATH
 
 rm -rf Anaconda3-2024.10-1-Linux-x86_64.sh
 
-conda install -c r r-irkernel
+echo y | conda install -c r r-irkernel
 
 
 
