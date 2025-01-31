@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir /root/workspace
+cd /root/workspace
+
 conda create -n renv python=3.9 -y
 
 source /root/anaconda3/etc/profile.d/conda.sh
