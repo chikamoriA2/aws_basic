@@ -79,7 +79,9 @@ export PATH=/root/anaconda3/bin:$PATH
 
 rm -rf Anaconda3-2024.10-1-Linux-x86_64.sh
 
+
+dnf install R-core R-core-devel
 # echo y | conda install -c r r-irkernel
 
-
+conda init
 
