@@ -75,12 +75,14 @@ pip install jupyter --ignore-installed
 
 wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 sh Anaconda3-2024.10-1-Linux-x86_64.sh -b
-export PATH=/root/anaconda3/bin:$PATH
+# export PATH=/root/anaconda3/bin:$PATH
+
+echo 'export PATH=/root/anaconda3/bin:$PATH'  >> /root/.bash_profile
 
 rm -rf Anaconda3-2024.10-1-Linux-x86_64.sh
 
 
-dnf install R-core R-core-devel
+dnf -y install R-core R-core-devel
 # echo y | conda install -c r r-irkernel
 
 conda init
